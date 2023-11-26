@@ -9,9 +9,51 @@ export default function Projects() {
   const toolsBookshelf = ["NodeJs", "Hapi", "REST Api", "Postman"];
   const toolsNovel = ["ExpressJs", "EJS", "Postgres", "Sequelize", "Tailwind"];
   const toolsOnlineCourse = ["ExpressJs", "ReactJs", "Postgres", "Sequelize"];
+  const toolsAzuraVoyage = ["NextJs", "Vercel Postgres", "Prisma", "Tailwind", "Flutter"];
 
   return (
     <div className="px-10 grid grid-cols-1 md:grid-cols-2 md:px-4 gap-16">
+      <a
+        href="https://github.com/Team2-CapstoneProject/BE-CMS-Next"
+        target="_blank"
+        className="w-[100%] flex flex-col hover:bg-gray-600 hover:scale-110 duration-200"
+      >
+        <div className="flex justify-between items-center">
+          <div className="text-xl font-bold tracking-wider pt-1">
+            Azura Voyage
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <a
+              href="https://fullstak-vila-reservation.vercel.app/"
+              target="_blank"
+              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150"
+            >
+              Front-End
+            </a>
+            <a
+              href="https://fietarigan.github.io/villa-reservation-api-doc/"
+              target="_blank"
+              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150"
+            >
+              Api-Docs
+            </a>
+          </div>
+        </div>
+        <div className="text-xl font-bold tracking-wider pt-1"></div>
+        <div className="flex flex-col justify-between h-[100%]">
+          <div className="py-2 text-lg">
+            Azura Voyage is an mobile and web apps for villa reservation. This project is a collaboration project.
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            {toolsAzuraVoyage.map((value, idx) => (
+              <span key={idx} className="bg-gray-600 px-3 pt-2 pb-1 rounded-lg">
+                {value}
+              </span>
+            ))}
+          </div>
+        </div>
+      </a>
+
       <a
         href="https://github.com/fieTarigan/online-course-project"
         target="_blank"
