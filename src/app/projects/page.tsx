@@ -24,11 +24,18 @@ export default function Projects() {
           </div>
           <div className="flex gap-2 flex-wrap">
             <a
+              href="https://appetize.io/app/4lfpfjeopnmnpy4mbj2wyoqrvu?device=pixel6&osVersion=12.0"
+              target="_blank"
+              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150"
+            >
+              Mobile App
+            </a>
+            <a
               href="https://fullstak-vila-reservation.vercel.app/"
               target="_blank"
               className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150"
             >
-              Front-End
+              Web App
             </a>
             <a
               href="https://fietarigan.github.io/villa-reservation-api-doc/"
