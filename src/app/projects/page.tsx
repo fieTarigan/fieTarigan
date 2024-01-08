@@ -19,7 +19,7 @@ export default function Projects() {
   const toolsTuneAuto = [
     "PHP",
     "Laravel",
-    "My Sql",
+    "MySQL",
     "Tailwind",
   ];
 
