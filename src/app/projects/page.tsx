@@ -9,10 +9,44 @@ export default function Projects() {
   const toolsBookshelf = ["NodeJs", "Hapi", "REST Api", "Postman"];
   const toolsNovel = ["ExpressJs", "EJS", "Postgres", "Sequelize", "Tailwind"];
   const toolsOnlineCourse = ["ExpressJs", "ReactJs", "Postgres", "Sequelize"];
-  const toolsAzuraVoyage = ["NextJs", "Vercel Postgres", "Prisma", "Tailwind", "Flutter"];
+  const toolsAzuraVoyage = [
+    "NextJs",
+    "Vercel Postgres",
+    "Prisma",
+    "Tailwind",
+    "Flutter",
+  ];
+  const toolsTuneAuto = [
+    "PHP",
+    "Laravel",
+    "My Sql",
+    "Tailwind",
+  ];
 
   return (
     <div className="px-10 grid grid-cols-1 md:grid-cols-2 md:px-4 gap-16">
+      <a
+        href="https://tuneautomotive.co.id/"
+        target="_blank"
+        className="w-[100%] flex flex-col hover:bg-gray-600 hover:scale-110 duration-200"
+      >
+        <div className="text-xl font-bold tracking-wider pt-1">
+          Tune Automotive
+        </div>
+        <div className="flex flex-col justify-between h-[100%]">
+          <div className="py-2 text-lg">
+            A paid project for develop an automotive website application.
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            {toolsTuneAuto.map((value, idx) => (
+              <span key={idx} className="bg-gray-600 px-3 pt-2 pb-1 rounded-lg">
+                {value}
+              </span>
+            ))}
+          </div>
+        </div>
+      </a>
+
       <a
         href="https://github.com/Team2-CapstoneProject/BE-CMS-Next"
         target="_blank"
@@ -49,7 +83,8 @@ export default function Projects() {
         <div className="text-xl font-bold tracking-wider pt-1"></div>
         <div className="flex flex-col justify-between h-[100%]">
           <div className="py-2 text-lg">
-            Azura Voyage is an mobile and web apps for villa reservation. This project is a collaboration project.
+            Azura Voyage is an mobile and web apps for villa reservation. This
+            project is a collaboration project.
           </div>
           <div className="flex gap-2 flex-wrap">
             {toolsAzuraVoyage.map((value, idx) => (
