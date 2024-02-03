@@ -1,3 +1,6 @@
+import Image from "next/image";
+import iconExternalLink from "../../../public/external-link.png";
+
 export default function Projects() {
   const toolsSChatApp = [
     "ExpressJs",
@@ -60,23 +63,26 @@ export default function Projects() {
             <a
               href="https://appetize.io/app/4lfpfjeopnmnpy4mbj2wyoqrvu?device=pixel6&osVersion=12.0"
               target="_blank"
-              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150"
+              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150 flex gap-1 items-center"
             >
               Mobile App
+              <Image src={iconExternalLink} alt="external link icon" width={25} />
             </a>
             <a
               href="https://fullstak-vila-reservation.vercel.app/"
               target="_blank"
-              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150"
+              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150 flex gap-1 items-center"
             >
               Web App
+              <Image src={iconExternalLink} alt="external link icon" width={25} />
             </a>
             <a
               href="https://fietarigan.github.io/villa-reservation-api-doc/"
               target="_blank"
-              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150"
+              className="bg-gray-700 px-3 pt-2 pb-1 rounded-lg hover:bg-gray-950 duration-150 flex gap-1 items-center"
             >
               Api-Docs
+              <Image src={iconExternalLink} alt="external link icon" width={25} />
             </a>
           </div>
         </div>
